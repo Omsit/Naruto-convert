@@ -1,0 +1,123 @@
+{
+  "id": "n5econversion",
+  "title": "N5E Conversion",
+  "description": "An add on module that allows for use with the N5E ( Naruto Inspired 5e ) Role playing game. Application is not stand alone, requires DnD5e to function correctly.",
+  "version": "1.0",
+  "library": "false",
+  "manifestPlusVersion": "1.2.0",
+  "compatibility": {
+    "minimum": 10,
+    "verified": 11,
+    "maximum": 11
+  },
+  "authors": [
+    {
+      "name": "Jordan Nelson",
+      "url": "https://gitlab.com/JotaroSan",
+      "discord": "Jotaro Uchiha#0167"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "compatibility": {
+          "minimum": "2.1.0",
+          "verified": "2.1.2"
+        },
+        "id": "dnd5e",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json"
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/n5econversion.mjs"
+  ],
+  "scripts": [],
+  "styles": [
+    "styles/n5econversion.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "n5e-jutsu",
+      "system": "dnd5e",
+      "private": false,
+      "label": "N5E - Jutsu Database",
+      "flags": {},
+      "path": "packs/jutsu.db",
+      "type": "Item"
+    },
+    {
+      "name": "n5e-clans-features",
+      "system": "dnd5e",
+      "private": false,
+      "label": "N5E - Clan Features Database",
+      "flags": {},
+      "path": "packs/clan-features.db",
+      "type": "Item"
+    },
+    {
+      "name": "n5e-classes",
+      "system": "dnd5e",
+      "private": false,
+      "label": "N5E - Classes Database",
+      "flags": {},
+      "path": "packs/classes.db",
+      "type": "Item"
+    },
+    {
+      "name": "n5e-class-features",
+      "system": "dnd5e",
+      "private": false,
+      "label": "N5E - Class Features Database",
+      "flags": {},
+      "path": "packs/class-features.db",
+      "type": "Item"
+    },
+    {
+      "name": "n5e-stances-and-feats",
+      "system": "dnd5e",
+      "private": false,
+      "label": "N5E - Stances and Feats Database",
+      "flags": {},
+      "path": "packs/stances-and-feats.db",
+      "type": "Item"
+    },
+    {
+      "name": "n5e-items",
+      "system": "dnd5e",
+      "private": false,
+      "label": "N5E - Items Database",
+      "flags": {},
+      "path": "packs/items.db",
+      "type": "Item"
+    },
+    {
+      "name": "n5e-npc-traits",
+      "system": "dnd5e",
+      "private": false,
+      "label": "N5E - NPC traits Database",
+      "flags": {},
+      "path": "packs/npc-traits.db",
+      "type": "Item"
+    }
+  ],
+  "url": "https://github.com/JotaroSan/N5E-Conversion",
+  "manifest": "https://github.com/JotaroSan/N5E-Conversion/releases/latest/download/module.json",
+  "download": "https://github.com/JotaroSan/N5E-Conversion/releases/download/v1.0/module.zip",
+  "license": "LICENSE",
+  "readme": "README.md"
+}
